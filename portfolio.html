@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Header container -->
-    <header>
+    <header class="header">
       <div class="container main-nav">
         <nav class="main-nav">
           <a href="/" class="logo"> <span class="logo-web">Web</span> Studio</a>
@@ -55,7 +55,7 @@
 
     <main>
       <section>
-        <h1 class="is-hidden">Портфолио</h1>
+        <h1 class="this-hidden">Портфолио</h1>
 
         <!-- Панель кнопок навигации -->
         <div class="container">
@@ -83,20 +83,26 @@
           <ul class="portfolio-items list">
             <li class="portfolio-element">
               <a href="">
-                <img
-                  src="./images/portfolio/img1.jpg"
-                  alt="Веб-сайт Технокряк"
-                  width="370"
-                />
+                <div class="portfolio-picture">
+                  <img
+                    src="./images/portfolio/img1.jpg"
+                    alt="Веб-сайт Технокряк"
+                    width="370"
+                  />
+
+                  <div class="description-bloc">
+                    <p class="description">
+                      Технокряк это современная площадка распространения
+                      коронавируса. Компании используют эту платформу для
+                      цифрового шпионажа и атак на защищённые сервера
+                      конкурентов.
+                    </p>
+                  </div>
+                </div>
 
                 <div class="portfolio-sign">
                   <h2 class="portfolio-title">Технокряк</h2>
                   <p class="portfolio-text">Веб-сайт</p>
-                  <p class="description is-hidden">
-                    Технокряк это современная площадка распространения
-                    коронавируса. Компании используют эту платформу для
-                    цифрового шпионажа и атак на защищённые сервера конкурентов.
-                  </p>
                 </div>
               </a>
             </li>
@@ -273,7 +279,7 @@
           </ul>
         </div>
 
-        <div class="subscription is-hidden">
+        <div class="subscription this-hidden">
           <p class="footer-title">Подпишитесь на рассылку</p>
           <button class="button">
             Подписаться

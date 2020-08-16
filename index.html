@@ -61,13 +61,13 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button">Заказать услугу</button>
+        <button class="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!--   Особенности section 2 -->
       <section class="section">
         <div class="container">
-          <h2 class="is-hidden">Особенности</h2>
+          <h2 class="this-hidden">Особенности</h2>
           <ul class="features list">
             <li class="features-items">
               <div class="features-sprite">
@@ -136,7 +136,7 @@
                 alt="Изображение ноутбука"
                 width="370"
               />
-              <h3 class="is-hidden work-title">Десктопные приложения</h3>
+              <h3 class="work-title">Десктопные приложения</h3>
             </li>
             <li class="work-element">
               <img
@@ -144,7 +144,7 @@
                 alt="Изображение мобильного телефона"
                 width="370"
               />
-              <h3 class="is-hidden work-title">Мобильные приложения</h3>
+              <h3 class="work-title">Мобильные приложения</h3>
             </li>
             <li class="work-element">
               <img
@@ -152,7 +152,7 @@
                 alt="Изображение монитора"
                 width="370"
               />
-              <h3 class="is-hidden work-title">Дизайнерские решения</h3>
+              <h3 class="work-title">Дизайнерские решения</h3>
             </li>
           </ul>
         </div>
@@ -446,7 +446,7 @@
           </ul>
         </div>
 
-        <div class="subscription is-hidden">
+        <div class="subscription this-hidden">
           <p class="footer-title">Подпишитесь на рассылку</p>
           <button class="button">
             Подписаться
@@ -457,5 +457,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- MODAL WINDOW -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
